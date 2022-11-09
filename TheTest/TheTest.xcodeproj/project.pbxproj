@@ -19,6 +19,7 @@
 		7335D09E291C0860003E7E3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7335D0A0291C0861003E7E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7335D0A3291C0861003E7E3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7335D0AA291C08EE003E7E3E /* Danger */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Danger; path = ../../Danger; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		7335D09B291C0860003E7E3E /* TheTest */ = {
 			isa = PBXGroup;
 			children = (
+				7335D0AA291C08EE003E7E3E /* Danger */,
 				7335D09C291C0860003E7E3E /* TheTestApp.swift */,
 				7335D09E291C0860003E7E3E /* ContentView.swift */,
 				7335D0A0291C0861003E7E3E /* Assets.xcassets */,
