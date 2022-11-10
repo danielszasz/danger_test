@@ -8,19 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello!")
+        NavigationView {
+            VStack {
+                NavigationLink("TEST", destination: Content())
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct Content: View {
+    @StateObject var viewModel: ViewModle = ViewModle()
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                NavigationLink("TEST", destination: TestView(action: viewModel.getAction()))
+            }
+            .padding()
+        }
+
+    }
+}
+
+struct TestView: View {
+    var action: Action
+
+    var body: some View {
+        Button(action: action.action) {
+            Text("DFDS")
+        }
     }
 }
