@@ -25,7 +25,7 @@ struct Content: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink("TEST", destination: TestView(action: viewModel.getAction()))
+                NavigationLink("TESdT", destination: TestView(action: viewModel.getAction()))
             }
             .padding()
         }
