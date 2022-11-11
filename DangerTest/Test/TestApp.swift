@@ -1,14 +1,14 @@
 //
-//  TheTestApp.swift
-//  TheTest
+//  TestApp.swift
+//  Test
 //
-//  Created by BTMac on 09.11.2022.
+//  Created by BTMac on 11.11.2022.
 //
 
 import SwiftUI
 
 @main
-struct TheTestApp: App {
+struct TestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
