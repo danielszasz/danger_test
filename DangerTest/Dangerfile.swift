@@ -22,6 +22,3 @@ if danger.github != nil {
         warn("PR is classed as Work in Progress")
     }
 }
-
-print("Running Swiftlint on changed files...")
-SwiftLint.lint(.files(editedFiles), inline: true, strict: true, quiet: false)
