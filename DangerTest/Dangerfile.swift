@@ -1,5 +1,6 @@
 import Danger
 import Foundation
+import DangerSwiftCoverage
 
 let danger = Danger()
 let editedFiles = danger.git.modifiedFiles + danger.git.createdFiles
@@ -22,3 +23,8 @@ if danger.github != nil {
         warn("PR is classed as Work in Progress")
     }
 }
+
+Coverage.xcodeBuildCoverage(.xcresultBundle("Test-brwugiheoxrfhlehbnerfwxibndp/Logs/Test/Test-Test-2022.11.14_13-47-23-+0200.xcresult"),
+                            minimumCoverage: 50,
+                            excludedTargets: ["DangerSwiftCoverageTests.xctest"])
+
