@@ -15,8 +15,16 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Installing Danger JS"
-          command: danger-swift ci
+          name: "Installing Danger"
+          command: npm install -g danger
+      - run:
+          name: "Compiling Danger"
+          command: swift build
+      - run:
+          name: "Running Danger Swift"
+          command: siwft run danger-swift ci
+
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
