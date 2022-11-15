@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Installing Danger"
-          command: npm install -g danger
+          command: npm install -g danger --no-package-lock
       - run:
           name: "Compiling Danger"
           command: swift build
