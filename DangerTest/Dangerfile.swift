@@ -24,7 +24,13 @@ if danger.github != nil {
     }
 }
 
-Coverage.xcodeBuildCoverage(.xcresultBundle("Test-brwugiheoxrfhlehbnerfwxibndp/Logs/Test/Test-Test-2022.11.14_13-47-23-+0200.xcresult"),
-                            minimumCoverage: 50,
-                            excludedTargets: ["DangerSwiftCoverageTests.xctest"])
+
+Coverage.xcodeBuildCoverage(.xcresultBundle("Test-Test-2022.11.15_09-43-41-+0200.xcresult"),
+                            minimumCoverage: 100)
+//
+//Coverage.xcodeBuildCoverage(.derivedDataFolder("Build"),
+//                            minimumCoverage: 50,
+//                            excludedTargets: ["DangerSwiftCoverageTests.xctest"])
+
+
 
